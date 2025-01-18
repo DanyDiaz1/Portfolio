@@ -135,6 +135,16 @@ const projects = [
             { icon: "devicon-php-plain colored", name: "PHP" },
         ],
         link: "https://github.com/DanyDiaz1/PetHero_FinalProject_Lab4_UTN/tree/main"
+    },
+    {
+        title: "Portfolio",
+        description: "You are here!",
+        tags: [
+            { icon: "devicon-html5-plain colored", name: "HTML" },
+            { icon: "devicon-css3-plain colored", name: "CSS" },
+            { icon: "devicon-javascript-plain colored", name: "JavaScript" },
+        ],
+        link: "https://danydiaz1.github.io/Portfolio/"
     }
 ];
 
