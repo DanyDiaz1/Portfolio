@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Daniel Diaz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="resources/images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <div class="profile">
+        <h2>Daniel Diaz</h2>
+        <h3>Backend Developer</h3>
+        <img src="resources/images/profile-photo.jpg" alt="profile photo" />
+      </div>
+      <nav>
+        <button class="nav-btn" id="notDisplay" data-section="about-me">About Me</button>
+        <button class="nav-btn" id="notDisplay" data-section="technologies">
+          Technologies
+        </button>
+        <button class="nav-btn" id="notDisplay" data-section="projects">Projects</button>
+        <button class="nav-btn" data-section="contact-me">Contact Me</button>
+        <a
+          href="resources/CV Daniel Diaz.pdf"
+          class="cv-button"
+          download="CV_Daniel_Diaz.pdf"
+          >Download CV</a
+        >
+      </nav>
+      <div class="social-links">
+        <!-- LinkedIn Icon -->
+        <a
+          href="https://www.linkedin.com/in/daniel-diazz/"
+          target="_blank"
+          class="social-icon"
+        >
+          <img src="resources/images/icons8-linkedin.svg" alt="LinkedIn" />
+        </a>
+        <!-- GitHub Icon -->
+        <a
+          href="https://github.com/DanyDiaz1"
+          target="_blank"
+          class="social-icon"
+        >
+          <img src="resources/images/icons8-github.svg" alt="GitHub" />
+        </a>
+      </div>
+      <p class="footer">Daniel Diaz | © 2025</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+      <section id="main" class="section">
+        <h3>
+          <span class="java-keyword">public</span
+          ><span class="java-keyword"> static</span
+          ><span class="java-keyword"> void</span> main(){
+        </h3>
+
+        <section id="about-me" class="section-methods">
+          <h3>
+            <span class="java-keyword">public</span>
+            <span class="java-keyword">void</span> aboutMe(Information
+            <select id="info-selector" onchange="updateInfo()">
+              <option value="presentation">Presentation</option>
+              <option value="experience">Experience</option>
+              <option value="education">Education</option>
+              <option value="softSkills">Soft Skills</option>
+              <option value="hobbies">Hobbies</option></select
+            >){
+          </h3>
+
+          <div class="presentation-card">
+            <p id="info-text">
+              <!-- Information will be dynamically inserted here -->
+            </p>
+          </div>
+          <h3>}</h3>
+        </section>
+
+        <section id="technologies" class="section-methods">
+          <h3>
+            <span class="java-keyword">public</span>
+            <span class="java-keyword">void</span>
+            getTechnologiesByCategory(Category
+            <select id="category-filter" onchange="filterTechnologies()">
+              <option value="all">All</option>
+              <option value="languages">Languages</option>
+              <option value="frameworks">Frameworks</option>
+              <option value="databases">Databases</option>
+              <option value="tools">Tools</option></select
+            >){
+          </h3>
+          <div id="tech-grid" class="tech-grid">
+            <!-- Icons will be dynamically inserted here -->
+          </div>
+          <h3>}</h3>
+        </section>
+      </section>
+
+      <section id="projects" class="section-methods">
+        <h3>
+          <span class="java-keyword">public</span>
+          <span class="java-keyword"> void</span>
+          findProjectsByTechnology(Technology
+          <select id="tech-filter">
+            <option value="all">All</option>
+            <option value="java">Java</option>
+            <option value="mysql">MySQL</option>
+            <option value="spring boot">Spring Boot</option>
+            <option value="c">C</option>
+            <option value="javascript">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="php">PHP</option>
+          </select>
+          ){
+        </h3>
+
+        <div class="project-grid" id="project-grid">
+          <!-- Las tarjetas se generarán dinámicamente aquí -->
+        </div>
+      </section>
+
+      <section id="contact-me" class="section-methods">
+        <h3>
+          <span class="java-keyword">public</span
+          ><span class="java-keyword"> void</span> getTouchWithMe(){
+        </h3>
+
+        <form id="form" action="" class="form">
+          <input
+            name="name"
+            required
+            type="text"
+            id="name"
+            placeholder="Your Name"
+          />
+          <input
+            name="email"
+            type="text"
+            id="email"
+            required
+            placeholder="Your Email"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <h3>}</h3>
+      </section>
+      <h3>}</h3>
+      <a href="mailto:danielferdiazz@gmail.com" id="trucazo">Send Email</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
