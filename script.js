@@ -241,6 +241,6 @@ $form.addEventListener('submit', handleSubmit)
 function handleSubmit(event) {
   event.preventDefault()
   const form = new FormData(this)
-  trucazo.setAttribute('href', `mailto:danielferdiazz@gmail.com&?subject=Oferta de trabajo de ${form.get('name')}&body=${form.get('message')}`)
+  trucazo.setAttribute('href', `mailto:danielferdiazz@gmail.com?subject=Oferta de trabajo de ${form.get('name')}&body=${form.get('message')}`)
   trucazo.click()
 }
