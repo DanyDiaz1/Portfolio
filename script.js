@@ -145,6 +145,16 @@ const projects = [
             { icon: "devicon-javascript-plain colored", name: "JavaScript" },
         ],
         link: "https://danydiaz1.github.io/Portfolio/"
+    },
+    {
+        title: "File Manager API",
+        description: "API to upload, list or download files of any type. Data persistence in PostgreSQL.",
+        tags: [
+            { icon: "devicon-java-plain colored", name: "Java" },
+            { icon: "devicon-spring-plain colored", name: "Spring Boot" },
+            { icon: "devicon-postgresql-plain colored", name: "PostgreSQL" },
+        ],
+        link: "https://danydiaz1.github.io/Portfolio/"
     }
 ];
 
